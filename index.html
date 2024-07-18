@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Contact form</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <form>
+      <p class="title">Contact Us</p>
+      <div class="names flex">
+        <div>
+          <label for="fname">First Name *</label>
+          <br />
+          <input type="text" name="fname" id="fname" />
+          <br />
+          <span class="fname-error error scale">This field is required</span>
+        </div>
+        <div>
+          <label for="lname">Last Name *</label>
+          <br />
+          <input type="text" name="lname" id="lname" />
+          <br />
+          <span class="lname-error error scale">This field is required</span>
+        </div>
+      </div>
+      <div class="email">
+        <label for="email">Email Address *</label>
+        <input type="email" name="email" id="email" />
+        <span class="email-error error scale">This field is required</span>
+      </div>
+
+      <div class="queries flex">
+        <div>
+          <label for="query-title">Query Type *</label>
+          <br />
+          <div class="general">
+            <div class="dot dot-general"></div>
+            <p>General Enquiry</p>
+          </div>
+          <span class="queries-error error scale"
+            >Please select a query type</span
+          >
+        </div>
+        <div class="support">
+          <div class="dot dot-support"></div>
+          <p>Support Request</p>
+        </div>
+      </div>
+      <div class="message">
+        <label for="message">Message *</label>
+        <br />
+        <textarea name="textarea" id="" cols="0" rows="4"></textarea>
+        <span class="msg-error error scale">This field is required</span>
+      </div>
+
+      <div class="conset">
+        <div class="dot box"></div>
+        <p>I consent to being contacted by the team *</p>
+      </div>
+      <p class="conset-error error scale">
+        To submit this form, please consent to being contacted
+      </p>
+      <button class="btn">Submit</button>
+    </form>
+      <div class="success scale">
+        <div class="msg-sent">
+          <img src="./assets/images/icon-success-check.svg" alt="" />
+          <p>Message Sent!</p>
+        </div>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+      </div>
+  </body>
+</html>
