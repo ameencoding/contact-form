@@ -34,8 +34,9 @@
       </div>
       <div class="email">
         <label for="email">Email Address *</label>
-        <input type="email" name="email" id="email" />
-        <span class="email-error error scale">This field is required</span>
+        <input type="text" name="email" id="email" />
+        <span class="email-error error scale">Invalid email address</span>
+        <!-- <span class="email-error error scale">This field is required</span> -->
       </div>
 
       <div class="queries flex">
@@ -71,12 +72,12 @@
       </p>
       <button class="btn">Submit</button>
     </form>
-      <div class="success scale">
-        <div class="msg-sent">
-          <img src="./assets/images/icon-success-check.svg" alt="" />
-          <p>Message Sent!</p>
-        </div>
-        <p>Thanks for completing the form. We'll be in touch soon!</p>
+    <div class="success scale">
+      <div class="msg-sent">
+        <img src="./assets/images/icon-success-check.svg" alt="" />
+        <p>Message Sent!</p>
       </div>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
   </body>
 </html>
